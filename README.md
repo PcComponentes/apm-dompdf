@@ -1,6 +1,14 @@
 # Elastic APM for Dompdf
 
-This library supports Span traces of Dompdf renderings.
+This library supports Span traces of [Dompdf](https://github.com/dompdf/dompdf) renderings.
+
+## Installation
+
+1) Install via [composer](https://getcomposer.org/)
+
+    ```shell script
+    composer require pccomponentes/apm-dompdf
+    ```
 
 ## Usage
 
