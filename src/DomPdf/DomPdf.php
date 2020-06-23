@@ -25,6 +25,12 @@ final class DomPdf extends DomPdfBase
 
     public function render()
     {
+        if (false === $this->elasticApmTracer->active()) {
+            parent::render();
+
+            return;
+        }
+
         $span = $this->elasticApmTracer->startSpan(
             self::SPAN_NAME,
             self::SPAN_TYPE,
